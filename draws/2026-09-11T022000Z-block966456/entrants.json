@@ -1,0 +1,176 @@
+{
+  "note": "Converted by: node select.js convert (kept Rank 11-50, ascending). Columns and values are unchanged.",
+  "convertedFrom": {
+    "file": "leaderboard-export.csv",
+    "format": "csv",
+    "sha256": "904f9e075ff926a12e5ef8910fae307940bf7314f9d2c76666ee0d1c3c54f767",
+    "rows": 40
+  },
+  "kept": {
+    "count": 40,
+    "rule": "Rank 11-50, ascending"
+  },
+  "convertedAt": "2026-09-10T07:28:59.759Z",
+  "entrants": [
+    {
+      "Rank": 11,
+      "player": "mi****zo"
+    },
+    {
+      "Rank": 12,
+      "player": "bo****ey"
+    },
+    {
+      "Rank": 13,
+      "player": "Co****ag"
+    },
+    {
+      "Rank": 14,
+      "player": "Aw****wa"
+    },
+    {
+      "Rank": 15,
+      "player": "Je****22"
+    },
+    {
+      "Rank": 16,
+      "player": "An****ia"
+    },
+    {
+      "Rank": 17,
+      "player": "mi****ex"
+    },
+    {
+      "Rank": 18,
+      "player": "Ka****ot"
+    },
+    {
+      "Rank": 19,
+      "player": "ge****ed"
+    },
+    {
+      "Rank": 20,
+      "player": "pa****96"
+    },
+    {
+      "Rank": 21,
+      "player": "Jo****23"
+    },
+    {
+      "Rank": 22,
+      "player": "j9****08"
+    },
+    {
+      "Rank": 23,
+      "player": "re****de"
+    },
+    {
+      "Rank": 24,
+      "player": "Dr****ak"
+    },
+    {
+      "Rank": 25,
+      "player": "ch****ry"
+    },
+    {
+      "Rank": 26,
+      "player": "Ra****uh"
+    },
+    {
+      "Rank": 27,
+      "player": "Su****ps"
+    },
+    {
+      "Rank": 28,
+      "player": "dr****on"
+    },
+    {
+      "Rank": 29,
+      "player": "SH****MA"
+    },
+    {
+      "Rank": 30,
+      "player": "Ca****nD"
+    },
+    {
+      "Rank": 31,
+      "player": "Ho****cs"
+    },
+    {
+      "Rank": 32,
+      "player": "il****it"
+    },
+    {
+      "Rank": 33,
+      "player": "em****ge"
+    },
+    {
+      "Rank": 34,
+      "player": "CB****AS"
+    },
+    {
+      "Rank": 35,
+      "player": "MA****AC"
+    },
+    {
+      "Rank": 36,
+      "player": "DA****O2"
+    },
+    {
+      "Rank": 37,
+      "player": "MA****EF"
+    },
+    {
+      "Rank": 38,
+      "player": "EN****CE"
+    },
+    {
+      "Rank": 39,
+      "player": "Du****ne"
+    },
+    {
+      "Rank": 40,
+      "player": "Df****er"
+    },
+    {
+      "Rank": 41,
+      "player": "MB****06"
+    },
+    {
+      "Rank": 42,
+      "player": "CO****LI"
+    },
+    {
+      "Rank": 43,
+      "player": "IF****YA"
+    },
+    {
+      "Rank": 44,
+      "player": "OF****SS"
+    },
+    {
+      "Rank": 45,
+      "player": "SU****YA"
+    },
+    {
+      "Rank": 46,
+      "player": "FR****EZ"
+    },
+    {
+      "Rank": 47,
+      "player": "A8****RU"
+    },
+    {
+      "Rank": 48,
+      "player": "HI****50"
+    },
+    {
+      "Rank": 49,
+      "player": "BL****VY"
+    },
+    {
+      "Rank": 50,
+      "player": "Mu****23"
+    }
+  ]
+}
