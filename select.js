@@ -116,7 +116,27 @@ function combineBlockHashes(hashes) {
 // ===========================================================================
 
 const REPO = __dirname;
-const EXPLORER = 'https://mempool.space/api';
+
+// Block data comes from an Esplora-compatible explorer. mempool.space is the
+// default, but plenty of networks cannot reach it, so the lookups fall through
+// this list of mirrors serving the identical API and use the first that
+// answers. Override the whole list with --explorer <base-url> (or the
+// BTC_EXPLORER environment variable) to point at your own node.
+const DEFAULT_EXPLORERS = [
+  'https://mempool.space/api',
+  'https://blockstream.info/api',
+  'https://mempool.emzy.de/api',
+];
+let EXPLORERS = DEFAULT_EXPLORERS;
+
+function setExplorerOverride(value) {
+  if (!value || value === true) return;
+  const list = String(value)
+    .split(',')
+    .map((u) => u.trim().replace(/\/+$/, ''))
+    .filter(Boolean);
+  if (list.length) EXPLORERS = list;
+}
 
 // Every draw gets its own folder under draws/, created by `commit`, holding a
 // snapshot of the entrant list it committed to plus its four ceremony files.
@@ -618,20 +638,57 @@ function refuseOverwrite(file, flags, hint) {
 
 async function fetchText(url) {
   const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return (await res.text()).trim();
 }
 
+// Once a mirror answers, stick with it for the rest of the run so a multi-block
+// draw never reads half its hashes from one explorer and half from another.
+let preferredExplorer = null;
+
+// Ask each explorer in turn until one returns a value `parse` accepts. Network
+// errors and junk responses both just move on to the next mirror; only when all
+// of them fail does this throw, and the message names what each one did.
+async function askExplorers(pathSuffix, parse) {
+  const bases = preferredExplorer
+    ? [preferredExplorer, ...EXPLORERS.filter((b) => b !== preferredExplorer)]
+    : EXPLORERS;
+  const failures = [];
+  for (const base of bases) {
+    try {
+      const value = parse(await fetchText(`${base}${pathSuffix}`));
+      preferredExplorer = base;
+      return value;
+    } catch (e) {
+      // fetch() reports every transport problem as the unhelpful "fetch
+      // failed"; its .cause carries the real reason (DNS, TLS, refused).
+      const why = e.cause && e.cause.message ? `${e.message}: ${e.cause.message}` : e.message;
+      failures.push(`${base} -> ${why}`);
+    }
+  }
+  throw new Error(`no explorer answered.\n       ${failures.join('\n       ')}`);
+}
+
+// Web root of whichever explorer answered, for the human-readable links in the
+// ceremony pages. Every mirror in the list serves its browser UI at the API
+// base minus the trailing /api.
+function explorerWebBase() {
+  return (preferredExplorer ?? EXPLORERS[0]).replace(/\/api\/?$/, '');
+}
+
 async function getBitcoinTipHeight() {
-  const v = parseInt(await fetchText(`${EXPLORER}/blocks/tip/height`), 10);
-  if (!Number.isInteger(v)) throw new Error('explorer returned a non-numeric tip height');
-  return v;
+  return askExplorers('/blocks/tip/height', (body) => {
+    const v = parseInt(body, 10);
+    if (!Number.isInteger(v)) throw new Error(`non-numeric tip height "${body.slice(0, 40)}"`);
+    return v;
+  });
 }
 
 async function getBitcoinBlockHash(height) {
-  const hash = await fetchText(`${EXPLORER}/block-height/${height}`);
-  if (!HEX64.test(hash)) throw new Error(`explorer returned "${hash}" for height ${height}, not a 64-hex block hash`);
-  return hash;
+  return askExplorers(`/block-height/${height}`, (body) => {
+    if (!HEX64.test(body)) throw new Error(`returned "${body.slice(0, 40)}", not a 64-hex block hash`);
+    return body;
+  });
 }
 
 // --- Human-readable ceremony pages -----------------------------------------
@@ -643,7 +700,7 @@ async function getBitcoinBlockHash(height) {
 
 
 function blockLink(height, hash) {
-  return '[`' + hash + '`](https://mempool.space/block/' + hash + ')  (height ' + height + ')';
+  return '[`' + hash + '`](' + explorerWebBase() + '/block/' + hash + ')  (height ' + height + ')';
 }
 
 function entrantTable(source) {
@@ -683,7 +740,7 @@ function renderCommitmentMd(c, source) {
   md.push('so nobody could know or steer the outcome. See');
   md.push('[README](../../README.md#what-this-actually-does) for what that buys you.');
   md.push('');
-  md.push('Watch the block: <https://mempool.space/block/' + c.target.height + '>');
+  md.push('Watch the block: <' + explorerWebBase() + '/block/' + c.target.height + '>');
   md.push('');
   md.push('## Eligible entrants, in committed order');
   md.push('');
@@ -904,14 +961,18 @@ async function cmdCommit(flags) {
     try {
       tip = await getBitcoinTipHeight();
     } catch (e) {
-      die(`could not read the Bitcoin tip height (${e.message}).\n       Re-run with --height <H> and pick a height you know is still in the future.`);
+      die(
+        `could not read the Bitcoin tip height -- ${e.message}\n` +
+          '       Point at a reachable explorer with --explorer <base-url>, or re-run\n' +
+          '       with --height <H> and pick a height you know is still in the future.'
+      );
     }
     height = tip + buffer;
   } else {
     try {
       tip = await getBitcoinTipHeight();
     } catch (e) {
-      console.warn(`warning: could not read the tip height (${e.message}).`);
+      console.warn(`warning: could not read the tip height -- ${e.message}`);
       console.warn('warning: could NOT confirm the target block is still unmined. Verify by hand before publishing.');
     }
   }
@@ -977,7 +1038,7 @@ async function cmdCommit(flags) {
     `  Target block      height ${height}${blocks > 1 ? ` plus the next ${blocks - 1} (through ${lastNeeded}, combined)` : ''}`
   );
   console.log(`  Tip at commit     ${tip === null ? 'unknown (offline)' : tip}`);
-  console.log(`  Explorer          https://mempool.space/block/${height}`);
+  console.log(`  Explorer          ${explorerWebBase()}/block/${height}`);
   console.log('');
   const indexed = writeDrawsIndex();
   console.log(`  This draw         ${rel(drawDir)}/`);
@@ -1487,6 +1548,11 @@ Usage: node select.js <command> [options]
                --ahead <blocks>      target = current tip + blocks (default: 20, ~3.3h)
                --height <height>     pin an exact target height instead of --ahead
                --blocks <count>      combine a run of blocks (default: 1)
+               --explorer <url>      Esplora-compatible API base to read block
+                                     data from, e.g. https://blockstream.info/api
+                                     (default: mempool.space, then mirrors;
+                                     comma-separate to give your own fallbacks.
+                                     Also settable as BTC_EXPLORER)
                --draw <name>         folder name for this draw under draws/
                                      (default: today's date and the block height)
 
@@ -1502,6 +1568,7 @@ Usage: node select.js <command> [options]
                --draw <folder>     which draw to run, if more than one is waiting
                --block-hash <hex>  use a hash you read off an explorer instead
                                    of fetching it (comma-separated if --blocks > 1)
+               --explorer <url>    read block data from this API base instead
                --force             overwrite an existing result.json
 
   verify     Phase 4, for anyone. Re-checks the uploaded entrant file,
@@ -1509,6 +1576,7 @@ Usage: node select.js <command> [options]
              live chain, and re-runs the draw.
 
                --offline           skip the live block-hash lookup
+               --explorer <url>    read block data from this API base instead
                --draw <folder>     check a specific draw under draws/
                                    (default: the most recent one)
 
@@ -1538,6 +1606,7 @@ Typical run:
 
 async function main() {
   const { flags, positional } = parseArgs(process.argv.slice(2));
+  setExplorerOverride(flags.explorer ?? process.env.BTC_EXPLORER);
   const cmd = positional[0];
   switch (cmd) {
     case 'commit': return cmdCommit(flags);

@@ -117,8 +117,13 @@ https://github.com/cloudbet/provably-fair-tournament-winner-picker/blob/main/dra
 
 ### Step 4 — Wait
 
-About 3.5 hours. Step 2 printed a mempool.space link — that page shows the block once it
+About 3.5 hours. Step 2 printed a block-explorer link — that page shows the block once it
 exists.
+
+Block data is read from mempool.space, falling back to blockstream.info and mempool.emzy.de
+if it is unreachable (some networks block mempool.space). To force a particular one — your
+own node, say — pass `--explorer https://blockstream.info/api` to `commit`, `draw` or
+`verify`, or set `BTC_EXPLORER`. Any Esplora-compatible API works.
 
 ### Step 5 — Run the draw
 
