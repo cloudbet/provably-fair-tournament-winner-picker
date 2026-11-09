@@ -1,176 +1,136 @@
 {
-  "note": "Converted by: node select.js convert (kept Rank 11-50, ascending). Columns and values are unchanged.",
+  "note": "Converted by: node select.js convert (kept Rank 1-30, ascending). Columns and values are unchanged.",
   "convertedFrom": {
     "file": "leaderboard-export.csv",
     "format": "csv",
-    "sha256": "904f9e075ff926a12e5ef8910fae307940bf7314f9d2c76666ee0d1c3c54f767",
-    "rows": 40
+    "sha256": "5ddde8c6f9250b5da92e06a0662585abe49c91f785039e433bbef3ff1b9b59ca",
+    "rows": 30
   },
   "kept": {
-    "count": 40,
-    "rule": "Rank 11-50, ascending"
+    "count": 30,
+    "rule": "Rank 1-30, ascending"
   },
-  "convertedAt": "2026-09-10T07:28:59.759Z",
+  "convertedAt": "2026-11-09T07:38:23.707Z",
   "entrants": [
     {
+      "Rank": 1,
+      "Player": "H***s"
+    },
+    {
+      "Rank": 2,
+      "Player": "gett****wned"
+    },
+    {
+      "Rank": 3,
+      "Player": "n****3"
+    },
+    {
+      "Rank": 4,
+      "Player": "le****aze"
+    },
+    {
+      "Rank": 5,
+      "Player": "Eu****21"
+    },
+    {
+      "Rank": 6,
+      "Player": "Sh****er"
+    },
+    {
+      "Rank": 7,
+      "Player": "Amt****gpp"
+    },
+    {
+      "Rank": 8,
+      "Player": "Be****01"
+    },
+    {
+      "Rank": 9,
+      "Player": "t****25"
+    },
+    {
+      "Rank": 10,
+      "Player": "J****z"
+    },
+    {
       "Rank": 11,
-      "player": "mi****zo"
+      "Player": "t**e"
     },
     {
       "Rank": 12,
-      "player": "bo****ey"
+      "Player": "A****wa"
     },
     {
       "Rank": 13,
-      "player": "Co****ag"
+      "Player": "Scr****r67"
     },
     {
       "Rank": 14,
-      "player": "Aw****wa"
+      "Player": "Dr****ak"
     },
     {
       "Rank": 15,
-      "player": "Je****22"
+      "Player": "mi****ex"
     },
     {
       "Rank": 16,
-      "player": "An****ia"
+      "Player": "Us****66"
     },
     {
       "Rank": 17,
-      "player": "mi****ex"
+      "Player": "m****t"
     },
     {
       "Rank": 18,
-      "player": "Ka****ot"
+      "Player": "Andr****mania"
     },
     {
       "Rank": 19,
-      "player": "ge****ed"
+      "Player": "mar****122"
     },
     {
       "Rank": 20,
-      "player": "pa****96"
+      "Player": "S****A"
     },
     {
       "Rank": 21,
-      "player": "Jo****23"
+      "Player": "C****S"
     },
     {
       "Rank": 22,
-      "player": "j9****08"
+      "Player": "A****U"
     },
     {
       "Rank": 23,
-      "player": "re****de"
+      "Player": "F****Z"
     },
     {
       "Rank": 24,
-      "player": "Dr****ak"
+      "Player": "M****06"
     },
     {
       "Rank": 25,
-      "player": "ch****ry"
+      "Player": "H****50"
     },
     {
       "Rank": 26,
-      "player": "Ra****uh"
+      "Player": "B****VY"
     },
     {
       "Rank": 27,
-      "player": "Su****ps"
+      "Player": "dr****ton"
     },
     {
       "Rank": 28,
-      "player": "dr****on"
+      "Player": "Li****006"
     },
     {
       "Rank": 29,
-      "player": "SH****MA"
+      "Player": "D****er"
     },
     {
       "Rank": 30,
-      "player": "Ca****nD"
-    },
-    {
-      "Rank": 31,
-      "player": "Ho****cs"
-    },
-    {
-      "Rank": 32,
-      "player": "il****it"
-    },
-    {
-      "Rank": 33,
-      "player": "em****ge"
-    },
-    {
-      "Rank": 34,
-      "player": "CB****AS"
-    },
-    {
-      "Rank": 35,
-      "player": "MA****AC"
-    },
-    {
-      "Rank": 36,
-      "player": "DA****O2"
-    },
-    {
-      "Rank": 37,
-      "player": "MA****EF"
-    },
-    {
-      "Rank": 38,
-      "player": "EN****CE"
-    },
-    {
-      "Rank": 39,
-      "player": "Du****ne"
-    },
-    {
-      "Rank": 40,
-      "player": "Df****er"
-    },
-    {
-      "Rank": 41,
-      "player": "MB****06"
-    },
-    {
-      "Rank": 42,
-      "player": "CO****LI"
-    },
-    {
-      "Rank": 43,
-      "player": "IF****YA"
-    },
-    {
-      "Rank": 44,
-      "player": "OF****SS"
-    },
-    {
-      "Rank": 45,
-      "player": "SU****YA"
-    },
-    {
-      "Rank": 46,
-      "player": "FR****EZ"
-    },
-    {
-      "Rank": 47,
-      "player": "A8****RU"
-    },
-    {
-      "Rank": 48,
-      "player": "HI****50"
-    },
-    {
-      "Rank": 49,
-      "player": "BL****VY"
-    },
-    {
-      "Rank": 50,
-      "player": "Mu****23"
+      "Player": "Ato****ypto"
     }
   ]
 }

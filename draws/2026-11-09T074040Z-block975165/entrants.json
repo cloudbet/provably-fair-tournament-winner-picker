@@ -1,0 +1,136 @@
+{
+  "note": "Converted by: node select.js convert (kept Rank 1-30, ascending). Columns and values are unchanged.",
+  "convertedFrom": {
+    "file": "leaderboard-export.csv",
+    "format": "csv",
+    "sha256": "5ddde8c6f9250b5da92e06a0662585abe49c91f785039e433bbef3ff1b9b59ca",
+    "rows": 30
+  },
+  "kept": {
+    "count": 30,
+    "rule": "Rank 1-30, ascending"
+  },
+  "convertedAt": "2026-11-09T07:38:23.707Z",
+  "entrants": [
+    {
+      "Rank": 1,
+      "Player": "H***s"
+    },
+    {
+      "Rank": 2,
+      "Player": "gett****wned"
+    },
+    {
+      "Rank": 3,
+      "Player": "n****3"
+    },
+    {
+      "Rank": 4,
+      "Player": "le****aze"
+    },
+    {
+      "Rank": 5,
+      "Player": "Eu****21"
+    },
+    {
+      "Rank": 6,
+      "Player": "Sh****er"
+    },
+    {
+      "Rank": 7,
+      "Player": "Amt****gpp"
+    },
+    {
+      "Rank": 8,
+      "Player": "Be****01"
+    },
+    {
+      "Rank": 9,
+      "Player": "t****25"
+    },
+    {
+      "Rank": 10,
+      "Player": "J****z"
+    },
+    {
+      "Rank": 11,
+      "Player": "t**e"
+    },
+    {
+      "Rank": 12,
+      "Player": "A****wa"
+    },
+    {
+      "Rank": 13,
+      "Player": "Scr****r67"
+    },
+    {
+      "Rank": 14,
+      "Player": "Dr****ak"
+    },
+    {
+      "Rank": 15,
+      "Player": "mi****ex"
+    },
+    {
+      "Rank": 16,
+      "Player": "Us****66"
+    },
+    {
+      "Rank": 17,
+      "Player": "m****t"
+    },
+    {
+      "Rank": 18,
+      "Player": "Andr****mania"
+    },
+    {
+      "Rank": 19,
+      "Player": "mar****122"
+    },
+    {
+      "Rank": 20,
+      "Player": "S****A"
+    },
+    {
+      "Rank": 21,
+      "Player": "C****S"
+    },
+    {
+      "Rank": 22,
+      "Player": "A****U"
+    },
+    {
+      "Rank": 23,
+      "Player": "F****Z"
+    },
+    {
+      "Rank": 24,
+      "Player": "M****06"
+    },
+    {
+      "Rank": 25,
+      "Player": "H****50"
+    },
+    {
+      "Rank": 26,
+      "Player": "B****VY"
+    },
+    {
+      "Rank": 27,
+      "Player": "dr****ton"
+    },
+    {
+      "Rank": 28,
+      "Player": "Li****006"
+    },
+    {
+      "Rank": 29,
+      "Player": "D****er"
+    },
+    {
+      "Rank": 30,
+      "Player": "Ato****ypto"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "algorithm": "select.js (pin the exact commit of this repo when you publish)",
+  "createdAt": "2026-11-09T07:40:40.723Z",
+  "chain": "bitcoin",
+  "target": {
+    "height": 975165,
+    "blocks": 1
+  },
+  "tipHeightAtCommit": 975145,
+  "n": 3,
+  "entrantCount": 30,
+  "commitmentHex": "1ba4cd9c65562ec8a5172c60de5c185021c34d4f5ec2ebbbb46fcebe3d7a6b22",
+  "source": {
+    "file": "entrants.json",
+    "copiedFrom": "entrants.json",
+    "format": "json",
+    "sha256": "f1b6e018201a35965d938495e748e5b4d309701a4f2a08dbc1f26043d9fd485c",
+    "idField": "Player",
+    "rankField": "Rank",
+    "eligibility": {
+      "mode": "rank-range",
+      "from": 1,
+      "to": 30
+    }
+  },
+  "entrants": [
+    "H***s",
+    "gett****wned",
+    "n****3",
+    "le****aze",
+    "Eu****21",
+    "Sh****er",
+    "Amt****gpp",
+    "Be****01",
+    "t****25",
+    "J****z",
+    "t**e",
+    "A****wa",
+    "Scr****r67",
+    "Dr****ak",
+    "mi****ex",
+    "Us****66",
+    "m****t",
+    "Andr****mania",
+    "mar****122",
+    "S****A",
+    "C****S",
+    "A****U",
+    "F****Z",
+    "M****06",
+    "H****50",
+    "B****VY",
+    "dr****ton",
+    "Li****006",
+    "D****er",
+    "Ato****ypto"
+  ]
+}
