@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "drawnAt": "2026-11-10T01:17:32.921Z",
+  "chain": "bitcoin",
+  "target": {
+    "height": 975165,
+    "blocks": 1
+  },
+  "commitmentHex": "1ba4cd9c65562ec8a5172c60de5c185021c34d4f5ec2ebbbb46fcebe3d7a6b22",
+  "entrantCount": 30,
+  "n": 3,
+  "blockHashes": [
+    "0000000000000000000073e3800822ae8efe4be122524e06cea669be34d597b6"
+  ],
+  "beacon": "0000000000000000000073e3800822ae8efe4be122524e06cea669be34d597b6",
+  "seedHex": "9f9d397c455188dcdb7aabbf6bbf37a208de0ae1baebfef1cccbb2c1ef64d295",
+  "winners": [
+    "A****U",
+    "Scr****r67",
+    "H***s"
+  ]
+}
