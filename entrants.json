@@ -1,44 +1,44 @@
 {
-  "note": "Converted by: node select.js convert (kept Rank 1-30, ascending). Columns and values are unchanged.",
+  "note": "Converted by: node select.js convert (format change only). Columns and values are unchanged.",
   "convertedFrom": {
     "file": "leaderboard-export.csv",
     "format": "csv",
-    "sha256": "5ddde8c6f9250b5da92e06a0662585abe49c91f785039e433bbef3ff1b9b59ca",
-    "rows": 30
+    "sha256": "f12079c9499be1c7a3724602615a4a2670e8c4ad2ca3364365d1a9be06cfc9e8",
+    "rows": 264
   },
   "kept": {
-    "count": 30,
-    "rule": "Rank 1-30, ascending"
+    "count": 264,
+    "rule": "every entrant in the file, in file order"
   },
-  "convertedAt": "2026-11-09T07:38:23.707Z",
+  "convertedAt": "2026-11-25T02:11:34.972Z",
   "entrants": [
     {
       "Rank": 1,
-      "Player": "H***s"
+      "Player": "Jo****ar"
     },
     {
       "Rank": 2,
-      "Player": "gett****wned"
-    },
-    {
-      "Rank": 3,
       "Player": "n****3"
     },
     {
-      "Rank": 4,
-      "Player": "le****aze"
-    },
-    {
-      "Rank": 5,
+      "Rank": 3,
       "Player": "Eu****21"
     },
     {
+      "Rank": 4,
+      "Player": "de****urn"
+    },
+    {
+      "Rank": 5,
+      "Player": "jul****cci"
+    },
+    {
       "Rank": 6,
-      "Player": "Sh****er"
+      "Player": "J**i"
     },
     {
       "Rank": 7,
-      "Player": "Amt****gpp"
+      "Player": "Luc****ien"
     },
     {
       "Rank": 8,
@@ -50,87 +50,1023 @@
     },
     {
       "Rank": 10,
-      "Player": "J****z"
-    },
-    {
-      "Rank": 11,
-      "Player": "t**e"
-    },
-    {
-      "Rank": 12,
-      "Player": "A****wa"
-    },
-    {
-      "Rank": 13,
-      "Player": "Scr****r67"
-    },
-    {
-      "Rank": 14,
-      "Player": "Dr****ak"
-    },
-    {
-      "Rank": 15,
-      "Player": "mi****ex"
-    },
-    {
-      "Rank": 16,
-      "Player": "Us****66"
-    },
-    {
-      "Rank": 17,
-      "Player": "m****t"
-    },
-    {
-      "Rank": 18,
       "Player": "Andr****mania"
     },
     {
-      "Rank": 19,
+      "Rank": 11,
+      "Player": "Sa****401"
+    },
+    {
+      "Rank": 12,
+      "Player": "A****rr"
+    },
+    {
+      "Rank": 13,
+      "Player": "com****ree"
+    },
+    {
+      "Rank": 14,
       "Player": "mar****122"
     },
     {
+      "Rank": 15,
+      "Player": "t**e"
+    },
+    {
+      "Rank": 16,
+      "Player": "A****wa"
+    },
+    {
+      "Rank": 17,
+      "Player": "Ato****ypto"
+    },
+    {
+      "Rank": 18,
+      "Player": "gett****wned"
+    },
+    {
+      "Rank": 19,
+      "Player": "Bob****zzla"
+    },
+    {
       "Rank": 20,
-      "Player": "S****A"
+      "Player": "bette****urist"
     },
     {
       "Rank": 21,
-      "Player": "C****S"
+      "Player": "M***F"
     },
     {
       "Rank": 22,
-      "Player": "A****U"
-    },
-    {
-      "Rank": 23,
       "Player": "F****Z"
     },
     {
-      "Rank": 24,
-      "Player": "M****06"
-    },
-    {
-      "Rank": 25,
-      "Player": "H****50"
-    },
-    {
-      "Rank": 26,
-      "Player": "B****VY"
-    },
-    {
-      "Rank": 27,
-      "Player": "dr****ton"
-    },
-    {
-      "Rank": 28,
-      "Player": "Li****006"
-    },
-    {
-      "Rank": 29,
+      "Rank": 23,
       "Player": "D****er"
     },
     {
+      "Rank": 24,
+      "Player": "C****S"
+    },
+    {
+      "Rank": 25,
+      "Player": "desir****-stage"
+    },
+    {
+      "Rank": 26,
+      "Player": "DA****YO2"
+    },
+    {
+      "Rank": 27,
+      "Player": "rab****oat"
+    },
+    {
+      "Rank": 28,
+      "Player": "I****A"
+    },
+    {
+      "Rank": 29,
+      "Player": "fragr****still"
+    },
+    {
       "Rank": 30,
-      "Player": "Ato****ypto"
+      "Player": "BI****GY"
+    },
+    {
+      "Rank": 31,
+      "Player": "C****LI"
+    },
+    {
+      "Rank": 32,
+      "Player": "ja****lol"
+    },
+    {
+      "Rank": 33,
+      "Player": "B****VY"
+    },
+    {
+      "Rank": 34,
+      "Player": "Dr****ak"
+    },
+    {
+      "Rank": 35,
+      "Player": "J****z"
+    },
+    {
+      "Rank": 36,
+      "Player": "Da****53"
+    },
+    {
+      "Rank": 37,
+      "Player": "m****t"
+    },
+    {
+      "Rank": 38,
+      "Player": "H****50"
+    },
+    {
+      "Rank": 39,
+      "Player": "traum****Beech"
+    },
+    {
+      "Rank": 40,
+      "Player": "h****v"
+    },
+    {
+      "Rank": 41,
+      "Player": "Us****66"
+    },
+    {
+      "Rank": 42,
+      "Player": "jons****king"
+    },
+    {
+      "Rank": 43,
+      "Player": "g***c"
+    },
+    {
+      "Rank": 44,
+      "Player": "H***s"
+    },
+    {
+      "Rank": 45,
+      "Player": "bru****ai33"
+    },
+    {
+      "Rank": 46,
+      "Player": "f****ao"
+    },
+    {
+      "Rank": 47,
+      "Player": "M****m"
+    },
+    {
+      "Rank": 48,
+      "Player": "wealt****igaret"
+    },
+    {
+      "Rank": 49,
+      "Player": "Mum****o123"
+    },
+    {
+      "Rank": 50,
+      "Player": "me****xo"
+    },
+    {
+      "Rank": 51,
+      "Player": "S****A"
+    },
+    {
+      "Rank": 52,
+      "Player": "O***S"
+    },
+    {
+      "Rank": 53,
+      "Player": "p****ha"
+    },
+    {
+      "Rank": 54,
+      "Player": "SH****UMA"
+    },
+    {
+      "Rank": 55,
+      "Player": "M****AC"
+    },
+    {
+      "Rank": 56,
+      "Player": "promi****-weigh"
+    },
+    {
+      "Rank": 57,
+      "Player": "j***8"
+    },
+    {
+      "Rank": 58,
+      "Player": "Scr****r67"
+    },
+    {
+      "Rank": 59,
+      "Player": "prem****chip"
+    },
+    {
+      "Rank": 60,
+      "Player": "Amt****gpp"
+    },
+    {
+      "Rank": 61,
+      "Player": "J***T"
+    },
+    {
+      "Rank": 62,
+      "Player": "ga****650"
+    },
+    {
+      "Rank": 63,
+      "Player": "Pi****skj"
+    },
+    {
+      "Rank": 64,
+      "Player": "B***z"
+    },
+    {
+      "Rank": 65,
+      "Player": "Ja****hr"
+    },
+    {
+      "Rank": 66,
+      "Player": "Meren****intens"
+    },
+    {
+      "Rank": 67,
+      "Player": "av****67"
+    },
+    {
+      "Rank": 68,
+      "Player": "spotl****stick"
+    },
+    {
+      "Rank": 69,
+      "Player": "ve****641"
+    },
+    {
+      "Rank": 70,
+      "Player": "T****65"
+    },
+    {
+      "Rank": 71,
+      "Player": "Myth****Touch"
+    },
+    {
+      "Rank": 72,
+      "Player": "eas****set"
+    },
+    {
+      "Rank": 73,
+      "Player": "p****s"
+    },
+    {
+      "Rank": 74,
+      "Player": "c***d"
+    },
+    {
+      "Rank": 75,
+      "Player": "t****n"
+    },
+    {
+      "Rank": 76,
+      "Player": "ale****iel"
+    },
+    {
+      "Rank": 77,
+      "Player": "ill****avit"
+    },
+    {
+      "Rank": 78,
+      "Player": "med****203"
+    },
+    {
+      "Rank": 79,
+      "Player": "po****ams"
+    },
+    {
+      "Rank": 80,
+      "Player": "mi****ex"
+    },
+    {
+      "Rank": 81,
+      "Player": "Zy****55"
+    },
+    {
+      "Rank": 82,
+      "Player": "M*y"
+    },
+    {
+      "Rank": 83,
+      "Player": "stead****-gift"
+    },
+    {
+      "Rank": 84,
+      "Player": "ser****o09"
+    },
+    {
+      "Rank": 85,
+      "Player": "Si****rir"
+    },
+    {
+      "Rank": 86,
+      "Player": "dss****fsdf"
+    },
+    {
+      "Rank": 87,
+      "Player": "imri****97148"
+    },
+    {
+      "Rank": 88,
+      "Player": "sna****rise"
+    },
+    {
+      "Rank": 89,
+      "Player": "K***n"
+    },
+    {
+      "Rank": 90,
+      "Player": "Cl****96"
+    },
+    {
+      "Rank": 91,
+      "Player": "amiab****uthor"
+    },
+    {
+      "Rank": 92,
+      "Player": "Bre****987"
+    },
+    {
+      "Rank": 93,
+      "Player": "f****l1"
+    },
+    {
+      "Rank": 94,
+      "Player": "jos****eal"
+    },
+    {
+      "Rank": 95,
+      "Player": "woo****f88"
+    },
+    {
+      "Rank": 96,
+      "Player": "L*F"
+    },
+    {
+      "Rank": 97,
+      "Player": "V****s"
+    },
+    {
+      "Rank": 98,
+      "Player": "luck****-you"
+    },
+    {
+      "Rank": 99,
+      "Player": "clear****ossibl"
+    },
+    {
+      "Rank": 100,
+      "Player": "C****s"
+    },
+    {
+      "Rank": 101,
+      "Player": "leo****orc1"
+    },
+    {
+      "Rank": 102,
+      "Player": "dr****ton"
+    },
+    {
+      "Rank": 103,
+      "Player": "Sui****rips"
+    },
+    {
+      "Rank": 104,
+      "Player": "j****3"
+    },
+    {
+      "Rank": 105,
+      "Player": "wo****ng"
+    },
+    {
+      "Rank": 106,
+      "Player": "seb****an-"
+    },
+    {
+      "Rank": 107,
+      "Player": "Eu****AZ"
+    },
+    {
+      "Rank": 108,
+      "Player": "noise****-draft"
+    },
+    {
+      "Rank": 109,
+      "Player": "Pa****ut"
+    },
+    {
+      "Rank": 110,
+      "Player": "K****oi"
+    },
+    {
+      "Rank": 111,
+      "Player": "R***e"
+    },
+    {
+      "Rank": 112,
+      "Player": "Yehe****2016"
+    },
+    {
+      "Rank": 113,
+      "Player": "davi****ciog"
+    },
+    {
+      "Rank": 114,
+      "Player": "ni****777"
+    },
+    {
+      "Rank": 115,
+      "Player": "Soul****ke93"
+    },
+    {
+      "Rank": 116,
+      "Player": "V**m"
+    },
+    {
+      "Rank": 117,
+      "Player": "sna****desk"
+    },
+    {
+      "Rank": 118,
+      "Player": "B****T"
+    },
+    {
+      "Rank": 119,
+      "Player": "Ca****ta2"
+    },
+    {
+      "Rank": 120,
+      "Player": "cdt****tt3"
+    },
+    {
+      "Rank": 121,
+      "Player": "bu****ous"
+    },
+    {
+      "Rank": 122,
+      "Player": "Maur****ptor"
+    },
+    {
+      "Rank": 123,
+      "Player": "Lo****61"
+    },
+    {
+      "Rank": 124,
+      "Player": "thin****dirt"
+    },
+    {
+      "Rank": 125,
+      "Player": "Kae****ta21"
+    },
+    {
+      "Rank": 126,
+      "Player": "Sh****er"
+    },
+    {
+      "Rank": 127,
+      "Player": "nob****cell"
+    },
+    {
+      "Rank": 128,
+      "Player": "igor****eacci"
+    },
+    {
+      "Rank": 129,
+      "Player": "y***n"
+    },
+    {
+      "Rank": 130,
+      "Player": "k****3"
+    },
+    {
+      "Rank": 131,
+      "Player": "A****s"
+    },
+    {
+      "Rank": 132,
+      "Player": "poise****eakfas"
+    },
+    {
+      "Rank": 133,
+      "Player": "ma****cap"
+    },
+    {
+      "Rank": 134,
+      "Player": "SS****13"
+    },
+    {
+      "Rank": 135,
+      "Player": "valua****object"
+    },
+    {
+      "Rank": 136,
+      "Player": "ado****-cat"
+    },
+    {
+      "Rank": 137,
+      "Player": "Yo****nny"
+    },
+    {
+      "Rank": 138,
+      "Player": "firme****suranc"
+    },
+    {
+      "Rank": 139,
+      "Player": "Mah****_19"
+    },
+    {
+      "Rank": 140,
+      "Player": "ary****gos"
+    },
+    {
+      "Rank": 141,
+      "Player": "Kr****ka"
+    },
+    {
+      "Rank": 142,
+      "Player": "fe****fox"
+    },
+    {
+      "Rank": 143,
+      "Player": "Su****ga"
+    },
+    {
+      "Rank": 144,
+      "Player": "moon****sloud"
+    },
+    {
+      "Rank": 145,
+      "Player": "proli****shape"
+    },
+    {
+      "Rank": 146,
+      "Player": "k****bk"
+    },
+    {
+      "Rank": 147,
+      "Player": "Payp****rhat"
+    },
+    {
+      "Rank": 148,
+      "Player": "G***u"
+    },
+    {
+      "Rank": 149,
+      "Player": "bri****tics"
+    },
+    {
+      "Rank": 150,
+      "Player": "tempt****grade"
+    },
+    {
+      "Rank": 151,
+      "Player": "Th****ld"
+    },
+    {
+      "Rank": 152,
+      "Player": "Matt****12345"
+    },
+    {
+      "Rank": 153,
+      "Player": "syah****ulian"
+    },
+    {
+      "Rank": 154,
+      "Player": "r****6"
+    },
+    {
+      "Rank": 155,
+      "Player": "ta****aki"
+    },
+    {
+      "Rank": 156,
+      "Player": "sp****ere"
+    },
+    {
+      "Rank": 157,
+      "Player": "vi****s97"
+    },
+    {
+      "Rank": 158,
+      "Player": "o**v"
+    },
+    {
+      "Rank": 159,
+      "Player": "D****me"
+    },
+    {
+      "Rank": 160,
+      "Player": "se****es"
+    },
+    {
+      "Rank": 161,
+      "Player": "enoug****lands"
+    },
+    {
+      "Rank": 162,
+      "Player": "r****ad"
+    },
+    {
+      "Rank": 163,
+      "Player": "mir****ice"
+    },
+    {
+      "Rank": 164,
+      "Player": "easyg****-glass"
+    },
+    {
+      "Rank": 165,
+      "Player": "G****U"
+    },
+    {
+      "Rank": 166,
+      "Player": "bd****dk"
+    },
+    {
+      "Rank": 167,
+      "Player": "V***a"
+    },
+    {
+      "Rank": 168,
+      "Player": "lig****eek"
+    },
+    {
+      "Rank": 169,
+      "Player": "o****o"
+    },
+    {
+      "Rank": 170,
+      "Player": "trium****-succe"
+    },
+    {
+      "Rank": 171,
+      "Player": "Luc****indo"
+    },
+    {
+      "Rank": 172,
+      "Player": "K****1"
+    },
+    {
+      "Rank": 173,
+      "Player": "stau****nerve"
+    },
+    {
+      "Rank": 174,
+      "Player": "ro****31"
+    },
+    {
+      "Rank": 175,
+      "Player": "Malt****3ygh"
+    },
+    {
+      "Rank": 176,
+      "Player": "Jih****sky"
+    },
+    {
+      "Rank": 177,
+      "Player": "Mr***10"
+    },
+    {
+      "Rank": 178,
+      "Player": "D*d"
+    },
+    {
+      "Rank": 179,
+      "Player": "bagg****gger"
+    },
+    {
+      "Rank": 180,
+      "Player": "m***e"
+    },
+    {
+      "Rank": 181,
+      "Player": "l***n"
+    },
+    {
+      "Rank": 182,
+      "Player": "ig****ps"
+    },
+    {
+      "Rank": 183,
+      "Player": "O****3"
+    },
+    {
+      "Rank": 184,
+      "Player": "Ma****ka"
+    },
+    {
+      "Rank": 185,
+      "Player": "supe****-cake"
+    },
+    {
+      "Rank": 186,
+      "Player": "mo****le"
+    },
+    {
+      "Rank": 187,
+      "Player": "E***e"
+    },
+    {
+      "Rank": 188,
+      "Player": "son****vio"
+    },
+    {
+      "Rank": 189,
+      "Player": "sm****tax"
+    },
+    {
+      "Rank": 190,
+      "Player": "m****e"
+    },
+    {
+      "Rank": 191,
+      "Player": "skill****opposi"
+    },
+    {
+      "Rank": 192,
+      "Player": "DJ****OS"
+    },
+    {
+      "Rank": 193,
+      "Player": "com****t121"
+    },
+    {
+      "Rank": 194,
+      "Player": "Avi****use"
+    },
+    {
+      "Rank": 195,
+      "Player": "Potat****llz76"
+    },
+    {
+      "Rank": 196,
+      "Player": "r****4"
+    },
+    {
+      "Rank": 197,
+      "Player": "grate****chemic"
+    },
+    {
+      "Rank": 198,
+      "Player": "Cris****o007"
+    },
+    {
+      "Rank": 199,
+      "Player": "M****n"
+    },
+    {
+      "Rank": 200,
+      "Player": "halc****land"
+    },
+    {
+      "Rank": 201,
+      "Player": "Kve****iken"
+    },
+    {
+      "Rank": 202,
+      "Player": "bala****-kiss"
+    },
+    {
+      "Rank": 203,
+      "Player": "Vl****86"
+    },
+    {
+      "Rank": 204,
+      "Player": "moji****d123"
+    },
+    {
+      "Rank": 205,
+      "Player": "Dos****123"
+    },
+    {
+      "Rank": 206,
+      "Player": "A****9"
+    },
+    {
+      "Rank": 207,
+      "Player": "lavi****ca76"
+    },
+    {
+      "Rank": 208,
+      "Player": "g****o"
+    },
+    {
+      "Rank": 209,
+      "Player": "Le****er"
+    },
+    {
+      "Rank": 210,
+      "Player": "Jh****on7"
+    },
+    {
+      "Rank": 211,
+      "Player": "K***a"
+    },
+    {
+      "Rank": 212,
+      "Player": "Busi****0187"
+    },
+    {
+      "Rank": 213,
+      "Player": "avi****itor"
+    },
+    {
+      "Rank": 214,
+      "Player": "Yv****19"
+    },
+    {
+      "Rank": 215,
+      "Player": "Ja****eck"
+    },
+    {
+      "Rank": 216,
+      "Player": "strik****field"
+    },
+    {
+      "Rank": 217,
+      "Player": "M****eF"
+    },
+    {
+      "Rank": 218,
+      "Player": "le****ezy"
+    },
+    {
+      "Rank": 219,
+      "Player": "Optim****cally"
+    },
+    {
+      "Rank": 220,
+      "Player": "Co****222"
+    },
+    {
+      "Rank": 221,
+      "Player": "Ka****wa"
+    },
+    {
+      "Rank": 222,
+      "Player": "L****34"
+    },
+    {
+      "Rank": 223,
+      "Player": "Wh****kl"
+    },
+    {
+      "Rank": 224,
+      "Player": "Ha****d20"
+    },
+    {
+      "Rank": 225,
+      "Player": "porta****brain"
+    },
+    {
+      "Rank": 226,
+      "Player": "c****6"
+    },
+    {
+      "Rank": 227,
+      "Player": "Er****cc"
+    },
+    {
+      "Rank": 228,
+      "Player": "Elp****o22"
+    },
+    {
+      "Rank": 229,
+      "Player": "Mo***10"
+    },
+    {
+      "Rank": 230,
+      "Player": "s****7"
+    },
+    {
+      "Rank": 231,
+      "Player": "s****6"
+    },
+    {
+      "Rank": 232,
+      "Player": "D****77"
+    },
+    {
+      "Rank": 233,
+      "Player": "ba****ali"
+    },
+    {
+      "Rank": 234,
+      "Player": "cred****-race"
+    },
+    {
+      "Rank": 235,
+      "Player": "rea****etal"
+    },
+    {
+      "Rank": 236,
+      "Player": "assur****welcom"
+    },
+    {
+      "Rank": 237,
+      "Player": "No****ee"
+    },
+    {
+      "Rank": 238,
+      "Player": "lovel****nsitiv"
+    },
+    {
+      "Rank": 239,
+      "Player": "C****O"
+    },
+    {
+      "Rank": 240,
+      "Player": "MO****a20"
+    },
+    {
+      "Rank": 241,
+      "Player": "Sh****ev"
+    },
+    {
+      "Rank": 242,
+      "Player": "T***i"
+    },
+    {
+      "Rank": 243,
+      "Player": "Spad****s1604"
+    },
+    {
+      "Rank": 244,
+      "Player": "x****28"
+    },
+    {
+      "Rank": 245,
+      "Player": "M****on"
+    },
+    {
+      "Rank": 246,
+      "Player": "ample****nciple"
+    },
+    {
+      "Rank": 247,
+      "Player": "youn****fect"
+    },
+    {
+      "Rank": 248,
+      "Player": "favor****comple"
+    },
+    {
+      "Rank": 249,
+      "Player": "K***y"
+    },
+    {
+      "Rank": 250,
+      "Player": "room****anch"
+    },
+    {
+      "Rank": 251,
+      "Player": "B***o"
+    },
+    {
+      "Rank": 252,
+      "Player": "F****O"
+    },
+    {
+      "Rank": 253,
+      "Player": "D***0"
+    },
+    {
+      "Rank": 254,
+      "Player": "kr****tti"
+    },
+    {
+      "Rank": 255,
+      "Player": "dr****07"
+    },
+    {
+      "Rank": 256,
+      "Player": "jac****i777"
+    },
+    {
+      "Rank": 257,
+      "Player": "the****tery"
+    },
+    {
+      "Rank": 258,
+      "Player": "Pick****1021"
+    },
+    {
+      "Rank": 259,
+      "Player": "A**o"
+    },
+    {
+      "Rank": 260,
+      "Player": "ken****self"
+    },
+    {
+      "Rank": 261,
+      "Player": "1*g"
+    },
+    {
+      "Rank": 262,
+      "Player": "m**s"
+    },
+    {
+      "Rank": 263,
+      "Player": "fanta****-curre"
+    },
+    {
+      "Rank": 264,
+      "Player": "is****aku"
     }
   ]
 }

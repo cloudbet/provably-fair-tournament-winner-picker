@@ -7,6 +7,7 @@ block existed, then the result that block produced.
 |---|---:|---:|---:|---|
 | [`draws/2026-09-11T022000Z-block966456`](draws/2026-09-11T022000Z-block966456/) | 40 | 3 | 966456 | **BL****VY**, **Ka****ot**, **dr****on** — [result](draws/2026-09-11T022000Z-block966456/RESULT.md) |
 | [`draws/2026-11-09T074040Z-block975165`](draws/2026-11-09T074040Z-block975165/) | 30 | 3 | 975165 | **A****U**, **Scr****r67**, **H***s** — [result](draws/2026-11-09T074040Z-block975165/RESULT.md) |
+| [`draws/2026-11-25T022009Z-block977463`](draws/2026-11-25T022009Z-block977463/) | 264 | 10 | 977463 | _waiting for block 977463_ — [commitment](draws/2026-11-25T022009Z-block977463/COMMITMENT.md) |
 
 Check any of them yourself — Node 18+, no dependencies:
 
